@@ -112,5 +112,5 @@ def simulate_blockchain(difficulty):
 
 
 if __name__ == "__main__":
-    for difficulty in [1,2,3,4,5]:
+    for difficulty in [1,2,3,4,5,6]:
         simulate_blockchain(difficulty)
