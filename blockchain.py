@@ -49,7 +49,7 @@ class Block:
 
     def mine(self):
         prefix = '0' * self.difficulty
-        for nonce in range(10**7):
+        for nonce in range(10**10):
             hash_result = self.compute_hash(nonce)
             if hash_result.startswith(prefix):
                 return nonce, hash_result
@@ -112,5 +112,5 @@ def simulate_blockchain(difficulty):
 
 
 if __name__ == "__main__":
-    for difficulty in [1,2,3,4,5]:
+    for difficulty in [6]:
         simulate_blockchain(difficulty)
