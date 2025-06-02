@@ -3,7 +3,6 @@
 
 #include "zpie.h"
 
-// Shared zk-SNARK circuit for proving a * b = out
 void circuit()
 {
     element out;
@@ -13,8 +12,8 @@ void circuit()
     init(&a);
     init(&b);
 
-    input(&a, "1234");
-    input(&b, "5678");
+    input(&a, "32416190071");   
+    input(&b, "32416187567");   
 
     mul(&out, &a, &b);
 }
